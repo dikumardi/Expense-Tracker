@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 style="text-align: center;">Expense Tracker</h2>
+        <!-- <input type="date" id="date" "> -->
+    <input type="text" id="desc" placeholder="Expense Description">
+    <input type="number" id="amount" placeholder="Amount">
+    <button id="add">Add Expense</button>
+    <h3>Total: ₹<span id="total"></span></h3>
+    <ul id="list"></ul>
+  </div>
+     
+  <script src="script.js"></script>
+  <!-- <script>
+    let desc = document.querySelector("#desc");
+    let amount = document.querySelector("#amount");
+    let add = document.querySelector("#add");
+    let total = document.querySelector("#total");
+    let list = document.querySelector("#list");
+            let amt = 0 ;
+
+    add.addEventListener("click",function () {
+         
+           if (amt === 0) {
+           amt = Number(amount.value);
+            total.textContent = amt;
+            console.log("A",amt);
+           
+          } else {
+          let  b = Number(amount.value)
+          let answer =  amt + b ;
+          amt = answer ;
+          total.textContent = answer;
+          console.log("B", b);
+          console.log("Answer", amt);
+
+          }
+  
+    
+      let li = document.createElement("li");
+
+      li.textContent = desc.value ;
+
+      let box = document.createElement("div");
+      box.className = "btn"
+      box.textContent = ` ₹ $ {b}`
+
+      li.style.display = 'flex'
+      li.style.justifyContent = "Space-between"
+      
+      
+
+             
+       desc.value = "";
+       amount.value = "";
+       list.appendChild(li);
+       li.appendChild(box);
+    });
+    
+
+
+  </script> -->
+
+
+
+</body>
+</html>
